@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorkingWithTheWeb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO7-d5-jTn">
+                                <rect key="frame" x="0.0" y="145" width="393" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2b6-1A-Knd">
+                                <rect key="frame" x="0.0" y="199" width="393" height="123"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1n-Za-3YS">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Obtener Usuario"/>
+                                        <connections>
+                                            <action selector="getUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AdE-oA-Q8v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24g-IP-Cnn">
+                                        <rect key="frame" x="0.0" y="44.333333333333343" width="393" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Agregar Usuario"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4o-Pv-0bP">
+                                        <rect key="frame" x="0.0" y="88.666666666666686" width="393" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Actualizar Usuario"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="I2n-Ro-oS9">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working with the Web" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGl-gd-MXB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2b6-1A-Knd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2LX-Kn-35R"/>
+                            <constraint firstItem="TO7-d5-jTn" firstAttribute="top" secondItem="xGl-gd-MXB" secondAttribute="bottom" constant="50" id="403-0T-2fH"/>
+                            <constraint firstItem="I2n-Ro-oS9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="49G-Lx-wTg"/>
+                            <constraint firstItem="TO7-d5-jTn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5bH-mx-KDq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xGl-gd-MXB" secondAttribute="trailing" id="InV-Fs-R3g"/>
+                            <constraint firstItem="I2n-Ro-oS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LOG-cD-jXV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2b6-1A-Knd" secondAttribute="trailing" id="LPo-Nj-A9o"/>
+                            <constraint firstItem="2b6-1A-Knd" firstAttribute="top" secondItem="TO7-d5-jTn" secondAttribute="bottom" constant="30" id="Y1Q-sl-WkF"/>
+                            <constraint firstItem="xGl-gd-MXB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e50-AL-1am"/>
+                            <constraint firstItem="TO7-d5-jTn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sEM-hD-phZ"/>
+                            <constraint firstItem="xGl-gd-MXB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wcF-RS-kK6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="I2n-Ro-oS9" id="g2c-3M-AKm"/>
+                        <outlet property="userName" destination="TO7-d5-jTn" id="xQX-Cd-YSA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
